@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---META TAGS-->
+    <meta http-equiv='content-language' content='en-gb'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forgot any notes? Get all chapter-wise maths notes as PDF on Mathelogy">
+    <meta name="keywords" content="Mathelogy, mathelogy, maths notes, grade 9, cbse maths, notes, class 9">
+    <meta name="theme-color" content="#000000">
+    <!--MANIFEST-->
+    <link rel="manifest" href="manifest.json">
+    <!---Favicon-->
+    <link href="favicon.ICON" rel="shortcut icon" >
+    <!---TITLE TAG-->
+    <title>MATHELOGY - Get Comprehensive Notes for Grade IX for CBSE.</title>
+    <!---BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RFJDVVZBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0RFJDVVZBP');
+</script>
+<!-- Clarity tracking code for https://mathelogy.netlify.app -->
+<script> 
+   (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "7rocf5vqvg");
+</script>
+<!---->
+
+  <!--CSS-->
+  
+    <style>
+      /*WEBSITE-LOGO-LOADER*/
+        .loader{
+        position: fixed;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+      }
+      .loader_img{
+        border-radius: 5px;
+      }
+      /*GENERAL*/
+        body{
+          padding: 0;
+          margin: 0;
+            }
+
+          li{
+        letter-spacing:1px;
+        font-weight: 600;
+      }
+
+      a{
+        color: rgb(255, 255, 255);
+      }
+      a:hover{
+        color: rgb(243, 243, 243);
+        text-decoration: none;
+      }
+
+      /*NAVBAR-COMPONENT*/
+      #navbar{
+        border-bottom: 1px solid transparent;
+        margin-bottom: 40px;
+      }
+      .navbar{
+        background-color: transparent;
+        backdrop-filter: blur(6px);
+        margin-top: 1px;
+      }
+      .nav-item .nav-link{
+        color: #000000; 
+      }
+
+
+.divider{
+  padding: 1rem;
+}
+
+  /*ACCORDION-COMPONENT*/
+  section.accordion{
+    border-radius: 12px;
+    }
+    .heading{
+      font-size: 40px;
+      font-weight: 900;
+      font-family: sans-serif;
+      display: none;
+      opacity: 100;
+      width: 0;
+      height: 10px;
+    }
+    #accordionExample{
+      margin-top: 8px;
+      background-color:transparent;
+      border: none;
+    }
+      .chapter-name{
+        font-weight: 700;
+        color: #000000;
+        background-color: transparent;
+        letter-spacing:2px;
+      }
+      .chapter-name:hover{
+        text-decoration: none;
+        color: #000000;
+      }
+      .card-header{
+        background: transparent;
+        
+      }
+      .card-body ol li a{
+          font-weight: 600;
+          text-decoration: none;
+          color: #000000;
+          letter-spacing:2px;
+          background-color:transparent;    
+      }
+      .btn-chapterdownload{
+        font-weight: 600;
+        letter-spacing:1px;
+        border: none;
+        outline: none;
+      }
+      .accordion-img-grid{
+        display: relative;
+        padding: 0;
+      }
+      .embed-responsive{
+        box-shadow: 0 3px 10px #07070748;
+        border-radius: 12px;
+        border: none;
+      }
+      .embed-responsive-item{
+        background-color: transparent; 
+        border-radius: 12px;
+        outline: none;
+        border: none;
+      }
+
+      /*BOOK-BOX-GRID*/
+      .book-box-img{
+        width: 180px;
+        height: 135px;
+      }
+      .book-box-layout-1{
+        padding: 0 13%;
+      }
+      .book-box-layout-1 .alert{
+        border: 2px dashed #000000;
+      }
+      .book-box-summary-1{
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      .book-box-summary-1 b{
+        color: #000000;
+        letter-spacing:1.5px;
+      }
+
+      .book-box-layout-2{
+        opacity:0;
+        height: 0;
+        margin-top:-11px;
+      }
+      .horizontal-arrow{
+        color:#000000;
+        font-size: large;
+        font-weight: 600;
+      }
+      .horizontal-arrow:hover{
+        color: #000000;
+      }
+
+      /*FOOTER-COMPONENT*/
+      #footer{
+        color: #fff;
+        background-color: #000000;
+      }
+      footer-img{
+        border-radius: 4px;
+        box-shadow: 0 1px 10px #00000057;
+      }
+
+
+
+      @media (max-width: 765px) {
+        /*LOADER*/
+        .loader_img{
+          width: 210px;
+          height: 70px;
+        }
+
+        /*NAVBAR-COMPONENT*/
+        #navbar{
+          margin-bottom:60px;
+        }
+        /*ACCORDION-COMPONENT*/
+          .accordion-img-grid{
+            margin-top: -110px;
+            opacity:0;
+            width: 0;
+            height: 0;
+          }
+        .embed-responsive{
+        border-radius: 12px;
+        box-shadow: none;
+      }
+      .embed-responsive-item{
+        background-color: transparent; 
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        
+      }
+          .btn-chapterdownload{
+            margin-top: 10px;
+          }
+
+          .divider{
+            padding: 7px;
+          }
+
+          /*BOOK-BOX-LAYOUT*/
+          .book-box-img{
+            width: 170px;
+            height: 120px;
+          }
+          .book-box-layout-1{
+            opacity: 0;
+            height: 0;
+          }
+          .book-box-layout-2{
+            display: visible;
+            opacity: 100;
+            height: 100%;
+          }
+          .book-box-layout-2 .alert{
+            border:2px dashed #000000;
+          }
+          .horizontal-arrow{
+        color:#000000;
+        font-size: large;
+        font-weight: 600;
+      }
+      .horizontal-arrow:hover{
+        color: #000000;
+      }
+      .book-box-summary-2{
+        color: #000000;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+      .book-box-summary-2 b{
+        color: #000000;
+        letter-spacing: 2px;
+      }
+
+      }
+    </style>
+    
+</head>
+<body>
+  <!--WEBSITE-LOGO-LOADER-->
+    <header class="loader_bg">
+      <section class="loader">
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/mainlogo.png" class="loader_img" width="260" height="85" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;">
+        </div>
+      </section>
+    </header>
+  <!---->
+
+  <!--COMPONENT-NAVBAR-->
+    <header id="navbar">
+        <nav class="navbar fixed-top navbar-light justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/mathelogy.png" width="225" height="70" alt="MATHELOGY" style="border-radius: 4px;box-shadow: 0 1px 10px #00000044;">
+            </a>
+          </nav>
+      </header>
+    <!---->
+
+    <div class="divider"></div>
+
+    <br>
+<!---->
+<section class="book-box-layout-1">
+  <div class="alert alert-warning my-4" role="alert">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <center><img src="./assets/img/black-illustration3.png" class="book-box-img" alt="book"></center>
+        </div>
+        <div class="col-sm-8">
+          <p class="book-box-summary-1 text-dark mt-3" align="justify">
+            <b>Download Class 9 Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
+          </p>
+          <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="horizontal-arrow" download><strong>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+            <u> Get it here ! </u></strong></a>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>    
+
+<!--ACCORDION-COMPONENT-->
+<section class="accordion" id="grid">
+
+  <center class="heading">
+    <h1>Comprehensive Maths Note for Grade IX<sup>th</sup></h1>
+  </center>
+
+    <div class="container" id="container">
+      <div class="row">
+        <div class="col-md-8">
+            <div class="accordion" id="accordionExample">
+              <!---->
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class='chapter-name'>1. Number Systems</span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <ol class="user-select-none">
+                        <li><a class="links">Introduction</a></li>
+                        <li><a class="links">Irrational Numbers</a></li>
+                        <li><a class="links">Real Numbers and their Decimal Expansion</a></li>
+                        <li><a class="links">Representing Real Numbers on the Number line</a></li>
+                        <li><a class="links">Operations on Real Numbers</a></li>
+                        <li><a class="links">Laws of Exponents for Real Numbers</a></li>
+                        <li><a class="links">Summary</a></li>
+                      </ol>
+                      <!---->
+                      <div class="embed-responsive embed-responsive-16by9 mb-2">
+                        <iframe class="embed-responsive-item" src="./notes/NumberSystem-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                      </div>
+                      <!---->
+                        <button class="btn-chapterdownload btn btn-primary px-2">
+                          <a href="./notes/NumberSystem-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class='chapter-name'>2. Polynomials</span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Polynomials in One Variable</a></li>
+                            <li><a class="links">Zeroes of a Polynomial</a></li>
+                            <li><a class="links">Remainder Theorem</a></li>
+                            <li><a class="links">Factorisation of Polynomials</a></li>
+                            <li><a class="links">Algebraic Identities</a></li>
+                            <li><a class="links">Summary</a></li>
+                          </ol>
+                          <!---->
+                          <div class="embed-responsive embed-responsive-16by9 mb-2">
+                            <iframe class="embed-responsive-item" src="./notes/Polynomials-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                          </div>
+                          <!---->
+                            <button class="btn-chapterdownload btn btn-primary px-2">
+                              <a href="./notes/Polynomials-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class='chapter-name'>3. Coordinate Geometry</span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <ol  class="user-select-none">
+                        <li><a class="links">Introduction</a></li>
+                        <li><a class="links">Cartesian System</a></li>
+                        <li><a class="links">Plotting a Point in the Plane if it's Coordinates are given</a></li>
+                        <li><a class="links">Summary</a></li>
+                      </ol>
+                      <!---->
+                          <div class="embed-responsive embed-responsive-16by9 mb-2">
+                            <iframe class="embed-responsive-item" src="./notes/CoordinateGeometry-FullChapter_Notes.pdf" allowfullscreen></iframe>
+                          </div>
+                      <!---->
+                          <button class="btn-chapterdownload btn btn-primary px-2">
+                            <a href="./notes/CoordinateGeometry-FullChapter_Notes.pdf" download class="links">Download full notes</a>
+                          </button>
+                  </div>
+                </div>
+              </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <span class='chapter-name'>4. Linear Equations in Two Variables</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ol class="user-select-none">
+                          <li><a class="links">Introduction</a></li>
+                          <li><a class="links">Linear Equations</a></li>
+                          <li><a class="links">Solution of a Linear Equation</a></li>
+                          <li><a class="links">Graph of a Linear Equation in Two Variables</a></li>
+                          <li><a class="links">Equations of Lines Parallel to <em>x-</em>axis and <em>y-</em>axis</a></li>
+                          <li><a class="links">Summary</a></li>
+                        </ol>
+                        <!---->
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/LinearEquationsInTwoVariables-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                        <!---->
+                            <button class="btn-chapterdownload btn btn-primary px-2">
+                              <a href="./notes/LinearEquationsInTwoVariables-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                            </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span class='chapter-name'>5. Introduction to Euclid's Geometry</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ol class="user-select-none">
+                          <li><a class="links">Introduction</a></li>
+                          <li><a class="links">Euclid's Definitions, Axioms & Postulates</a></li>
+                          <li><a class="links">Equivalent Versions of Euclid's fifth Postulate</a></li>
+                          <li><a class="links">Summary</a></li>
+                        </ol>
+                          <!---->
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/Euclid'sGeometry-FullNOtes.pdf" allowfullscreen></iframe>
+                            </div>
+                          <!---->
+                            <button class="btn-chapterdownload btn btn-primary px-2">
+                              <a href="./notes/Euclid'sGeometry-FullNotes.pdf" download class="links">Download full notes</a>
+                            </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <span class='chapter-name'>6.  Lines and Angles</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ol class="user-select-none">
+                          <li><a class="links">Introduction</a></li>
+                          <li><a class="links">Basic Terms and Definitions</a></li>
+                          <li><a class="links">Intersecting Lines and Non-Intersecting Lines</a></li>
+                          <li><a class="links">Pairs of Angles</a></li>
+                          <li><a class="links">Parllel Lines and Transversal</a></li>
+                          <li><a class="links">Lines Parallel to the same Line</a></li>
+                          <li><a class="links">Angle Sum Property of a Triangle</a></li>
+                          <li><a class="links">Summary</a></li>
+                        </ol>
+                            <!---->
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/Lines&Angles-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                            <!---->
+                              <button class="btn-chapterdownload btn btn-primary px-2">
+                                <a href="./notes/Lines&Angles-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                              </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <span class='chapter-name'>7.  Triangles</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ol class="user-select-none">
+                          <li><a class="links">Introduction</a></li>
+                          <li><a class="links">Congruence of Triangle</a></li>
+                          <li><a class="links">Criteria for Congruence of Triangle</a></li>
+                          <li><a class="links">Some Properties of a Triangle</a></li>
+                          <li><a class="links">Some more Criteria for Congruence of Triangles</a></li>
+                          <li><a class="links">Inequalities in a Triangle</a></li>
+                          <li><a class="links">Summary</a></li>
+                        </ol>
+                        <!---->
+                          <div class="embed-responsive embed-responsive-16by9 mb-2">
+                            <iframe class="embed-responsive-item" src="./notes/Triangles-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                          </div>
+                          <!---->
+                            <button class="btn-chapterdownload btn btn-primary px-2">
+                              <a href="./notes/Triangles-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                            </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="book-box-layout-2">
+                  <div class="alert alert-warning my-4" role="alert">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <center><img src="./assets/img/black-illustration3.png" class="book-box-img" alt="book"></center>
+                        </div>
+                        <div class="col-sm-7">
+                          <p class="book-box-summary-2 text-dark mt-3" align="justify">
+                            <b>Download Class 9 Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
+                          </p>
+                        </div>
+                          <a href="./books/CBSE-NCERT-Class-9-MathsBook.pdf" class="horizontal-arrow" download>
+                            <strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                            <u> Get it here ! </u>
+                          </strong>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!---->
+                  <div class="card">
+                    <div class="card-header" id="headingEight">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <span class='chapter-name'>8. Quadrilaterals</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Angle Sum Property of a Quadrilateral</a></li>
+                            <li><a class="links">Types of Quadrilaterals</a></li>
+                            <li><a class="links">Prperties of a Quadrilateral</a></li>
+                            <li><a class="links">Another Condition for a Quadrilateral to be a Parallelogram</a></li>
+                            <li><a class="links">The Mid-point Theorem</a></li>
+                            <li><a class="links">Summary</a></li>
+                            </ol>
+                            <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingNine">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            <span class='chapter-name'>9. Areas of Parallelograms and Triangles </span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Figures on the same Base and Between the same Parallels</a></li>
+                            <li><a class="links">Parallelograms on the same Base and between the same Parallels </a></li>
+                            <li><a class="links">Triangles on the same Base and between the same Parallels </a></li>
+                            <li><a class="links">Summary</a></li>
+                            </ol>
+                            <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="card">
+                  <div class="card-header" id="headingTen">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                          <span class='chapter-name'>10. Circles</span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ol class="user-select-none">
+                          <li><a class="links">Introduction</a></li>
+                          <li><a class="links">Circles and it's Related Terms : A Review</a></li>
+                          <li><a class="links">Angle Subtended by a Chord at a Point</a></li>
+                          <li><a class="links">Perpendicular from then Centre to a Chord</a></li>
+                          <li><a class="links">Circle through Three Points</a></li>
+                          <li><a class="links">Equal Chords and their Distances from the Centre</a></li>
+                          <li><a class="links">Angle Subtended by an Arc of a Circle</a></li>
+                          <li><a class="links">Cyclic Quadrilaterals</a></li>
+                          <li><a class="links">Summary</a></li>
+                          </ol>
+                          <p class="text-danger ml-3">*Notes not Published</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingEleven">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            <span class='chapter-name'>11. Constructions</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Basic Constructions</a></li>
+                            <li><a class="links">Some Constructions of Triangles</a></li>
+                            <li><a class="links">Summary</a></li>
+                            </ol>
+                            <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwelve">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            <span class='chapter-name'>12. Heron's Formula</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Area of a Triangle - By Heron's Formula</a></li>
+                            <li><a class="links">Application of Heron's Formula in finding Areas of Quadrilaterals</a></li>
+                            <li><a class="links">Summary</a></li>
+                            </ol>
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/Heron'sFormula-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                            <!---->
+                              <button class="btn-chapterdownload btn btn-primary px-2">
+                                <a href="./notes/Heron'sFormula-FullChapter-Notes.pdf" download class="links">Download full notes</a>
+                              </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThirteen">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            <span class='chapter-name'>13. Surface Areas and Volumes</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Surface Area of a Cuboid and a Cube</a></li>
+                            <li><a class="links">Surface Area of a Right Circular Cylinder</a></li>
+                            <li><a class="links">Surface Area of a Right Circular Cone</a></li>
+                            <li><a class="links">Surface Area of a Sphere</a></li>
+                            <li><a class="links">Volume of a Cuboid</a></li>
+                            <li><a class="links">Volume of a Cylinder</a></li>
+                            <li><a class="links">Volume of a Right Circular Cone</a></li>
+                            <li><a class="links">Volume of a Sphere</a></li>
+                            <li><a class="links">Summary</a></li>
+                          </ol>
+                            <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFourteen">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            <span class='chapter-name'>14. Statistics</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Collection of data</a></li>
+                            <li><a class="links">Presentation of data</a></li>
+                            <li><a class="links">Graphical Representation of Data</a></li>
+                            <li><a class="links">Measures of Central Tendency</a></li>
+                            <li><a class="links">Summary</a></li>
+                          </ol>
+                            <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-2">
+                    <div class="card-header" id="headingFifteen">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                            <span class='chapter-name'>15. Probability</span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <ol class="user-select-none">
+                            <li><a class="links">Introduction</a></li>
+                            <li><a class="links">Probability-An Experimental Approach</a></li>
+                            <li><a class="links">Equivalent Versions of Euclid's fifth Postulate</a></li>
+                            <li><a class="links">Summary</a></li>
+                          </ol>
+                          <p class="text-danger ml-3">*Notes not Published</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+        <div class="accordion-img-grid col-6 col-md-4" align="center">
+          <img src="./assets/img/Do,Learn&UseMaths0.png" class="accordion-img-grid" alt="Do,Learn&UseMaths">
+        </div>
+      </div>
+ </div>
+ </section>
+<!--ACCORDION(END)-->
+<br>
+
+<!---->
+          <footer class="py-3 my-4">
+            <div class="container">
+              <center>
+                <img src="assets/img/shortlogo.png" class="footer-img" align="center" width="70" height="70" alt="MATHELOGY" style="border-radius: 4px;box-shadow: 0 1px 10px #00000057;">
+              </center>
+            <br>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About &nbsp;•&nbsp;</a></li>
+              <!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+  <li class="nav-item"><span class="text-muted">Contact &nbsp;•&nbsp;</span></li>
+</button>
+
+<!-- POPUP-(CONTACT) -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Contact Us</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!--CONTACT-FORM (NETLIFY-INTEGRATED)-->
+      <form name="contact" method="POST" action="index.html" data-netlify="true">
+        <div class="modal-body">
+          <div>
+            <label><b>Name</b></label>
+            <input type="text" placeholder="eg: myname" class="form-control" name="name">
+          </div>
+          <div class="form-group">
+            <label><b>Email</b></label>
+            <input type="email" placeholder="eg: email@gmail.com" class="form-control" name="email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label><b>Message</b></label>
+            <textarea class="form-control" rows="3" placeholder="Compose your message....." name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary"><b>Submit</b></button>
+        </div>
+      </form>
+      <!---->
+    </div>
+  </div>
+</div>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terms of Service</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 MATHELOGY, Inc</p>
+            <p class="text-center text-muted">
+              Developed By: <span class="text-dark"><b><a class="text-dark" href="https://www.linkedin.com/in/s-sai-srikanth-12491021b/" target="_blank">S.Sai Srikanth</a></b></span>
+            </p>
+          </footer>
+<!--FOOTER-END-->
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+      }, 1850)
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!---->
+    <script async src="https://s.widgetwhats.com/wwwa.js" data-wwwa="2557"></script>
+</body>
+</html>
