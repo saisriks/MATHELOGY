@@ -281,7 +281,7 @@
     <header class="loader_bg">
       <section class="loader">
         <div class="d-flex justify-content-center">
-          <img src="assets/img/mainlogo.png" class="loader_img" width="260" height="85" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;">
+          <img src="assets/img/mainlogo.png" class="loader_img" width="244" height="77" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;">
         </div>
       </section>
     </header>
@@ -291,7 +291,7 @@
     <header id="navbar">
         <nav class="navbar fixed-top navbar-light justify-content-center">
             <a class="navbar-brand" href="#">
-              <img src="assets/img/mathelogy.png" width="225" height="70" alt="MATHELOGY" style="border-radius: 4px;box-shadow: 0 1px 10px #00000044;">
+              <img src="assets/img/mathelogy.png" width="222" height="70" alt="MATHELOGY" style="border-radius: 4px;box-shadow: 0 1px 10px #00000044;">
             </a>
           </nav>
       </header>
@@ -774,18 +774,45 @@
               </center>
             <br>
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About &nbsp;•&nbsp;</a></li>
-              <!-- Button trigger modal -->
+
+              <!--ABOUT Button trigger modal -->
 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+  <li class="nav-item"><span class="nav-link px-2 text-muted">About &nbsp;•&nbsp;</span></li>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>About</strong></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" align="justify">
+        <p>Mathelogy is an online solution where my classmates can find all chapter-wise maths notes provided by my teacher in an organized and compressed way, making it convenient for all my classmates to not skip any notes and easily access them from anywhere in no time.</p>
+        <br>
+        <p>This Website is built using HTML5, CSS3, Bootstrap4 and JavaScript.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!---->
+
+
+              
+              <!--CONTACT Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop">
   <li class="nav-item"><span class="text-muted">Contact &nbsp;•&nbsp;</span></li>
 </button>
 
 <!-- POPUP-(CONTACT) -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><strong>Contact Us</strong></h5>
+        <h5 class="modal-title" id="staticBackdropLabel"><strong>Contact Us</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -814,7 +841,8 @@
     </div>
   </div>
 </div>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terms of Service</a></li>
+<!---->
+            <li class="nav-item"><a href="#" class="nav-link px-2 mt-2 text-muted">Terms of Service</a></li>
             </ul>
             <p class="text-center text-muted">© 2021 MATHELOGY, Inc</p>
             <p class="text-center text-muted">
