@@ -858,7 +858,7 @@
       </div>
 
       <!--CONTACT-FORM (NETLIFY-INTEGRATED)-->
-      <form name="contact" method="POST" action="index.html" data-netlify="true">
+      <form name="contact" method="POST" action="index.html" data-netlify-recaptcha="true" data-netlify="true">
         <div class="modal-body">
           <div>
             <label><b>Name</b></label>
@@ -873,6 +873,8 @@
             <label><b>Message</b></label>
             <textarea class="form-control" rows="3" placeholder="Compose your message....." name="message" required></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
+          <br>
           <button type="submit" class="btn btn-primary"><b>Submit</b></button>
         </div>
       </form>
