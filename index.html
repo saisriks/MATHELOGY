@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!---TITLE TAG-->
+    <title>MATHELOGY - Get Comprehensive Notes for Grade IX for CBSE.</title>
     <!---META TAGS-->
     <meta http-equiv='content-language' content='en-gb'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forgot any notes? Get all chapter-wise maths notes as PDF on Mathelogy">
-    <meta name="keywords" content="Mathelogy, mathelogy, maths notes, grade 9, cbse maths, notes, class 9">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Forgot any notes? Get all chapter-wise maths notes as PDF on Mathelogy. We publish maths notes for grade 9 students | Full chapter-wise maths notes">
+    <meta name="keywords" content="Mathelogy, mathelogy, maths notes, grade 9, grade 9th, cbse maths 9th, notes maths,grade 9, class 9, class 9th, maths notes for 9th graders, AVK, avk, Adarsh Vidya Kendra, adarsh vidya kendra">
     <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="mathelogy" />
+    <meta property="og:type" content="maths grade 9 notes" />
+    <meta property="og:url" content="https://mathelogy.netlify.app/" />
+    <meta property="og:image" content="https://mathelogy.netlify.app/assets/img/mathelogy.png" />
+    <meta property="og:description" content="Forgot any notes? Get all chapter-wise maths notes as PDF on Mathelogy. We publish maths notes for grade 9 students | Full chapter-wise maths notes" />
+    <!--CANONICAL-->
+    <link rel="canonical" href="https://mathelogy.netlify.app/" />
     <!--MANIFEST-->
     <link rel="manifest" href="manifest.json">
     <!---Favicon-->
-    <link href="favicon.ICON" rel="shortcut icon" >
-    <!---TITLE TAG-->
-    <title>MATHELOGY - Get Comprehensive Notes for Grade IX for CBSE.</title>
+    <link rel="shortcut icon" href="./favicon.ICON" type="image/x-icon" />
     <!---BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -58,7 +66,10 @@
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          cursor: cell;
+          scroll-behavior: smooth;
             }
+          
 
           li{
         letter-spacing:1px;
@@ -80,7 +91,7 @@
       }
       .navbar{
         background-color: transparent;
-        backdrop-filter: blur(6px);
+        backdrop-filter: blur(50px);
         margin-top: 1px;
       }
       .nav-item .nav-link{
@@ -95,6 +106,7 @@
   /*ACCORDION-COMPONENT*/
   section.accordion{
     border-radius: 12px;
+    cursor: cell
     }
     .heading{
       font-size: 40px;
@@ -109,6 +121,7 @@
       margin-top: 8px;
       background-color:transparent;
       border: none;
+      cursor: cell;
     }
       .chapter-name{
         font-weight: 700;
@@ -119,6 +132,11 @@
       .chapter-name:hover{
         text-decoration: none;
         color: #000000;
+      }
+      .btn-link:focus{
+        outline: none;
+        box-shadow: none;
+        text-decoration: none;
       }
       .card-header{
         background: transparent;
@@ -140,6 +158,7 @@
       .accordion-img-grid{
         display: relative;
         padding: 0;
+        cursor: cell;
       }
       .embed-responsive{
         box-shadow: 0 3px 10px #07070748;
@@ -162,16 +181,15 @@
         padding: 0 13%;
       }
       .book-box-layout-1 .alert{
+        background: #ffd000;
         border: 2px dashed #000000;
       }
       .book-box-summary-1{
         font-family: sans-serif;
         font-size: 18px;
-        font-weight: 800;
         letter-spacing: 2px;
       }
       .book-box-summary-1 b{
-        font-weight: 800;
         color: #000000;
         letter-spacing:2px;
       }
@@ -181,14 +199,18 @@
         height: 0;
         margin-top:-11px;
       }
-      .horizontal-arrow{
-        color:#000000;
-        font-size: large;
-        font-weight: 700;
+      .alert-btn{
+        border: 2px solid #000000;
       }
-      .horizontal-arrow:hover{
-        color: #000000;
+      .alert-btn:focus{
+        outline: none;
+        box-shadow: none;
       }
+
+      .badge-dark {
+    color: #fff;
+    background-color: #000000;
+}
 
       /*FOOTER-COMPONENT*/
       #footer{
@@ -198,6 +220,12 @@
       footer-img{
         border-radius: 4px;
         box-shadow: 0 1px 10px #00000057;
+      }
+      .btn:focus{
+        box-shadow: none;
+      }
+      #btn-left{
+        border-right: 2px solid #000000;
       }
 
 
@@ -254,16 +282,8 @@
             height: 100%;
           }
           .book-box-layout-2 .alert{
-            border:2px dashed #000000;
+            border:none;
           }
-          .horizontal-arrow{
-        color:#000000;
-        font-size: large;
-        font-weight: 600;
-      }
-      .horizontal-arrow:hover{
-        color: #000000;
-      }
       .book-box-summary-2{
         color: #000000;
         font-family: sans-serif;
@@ -280,12 +300,12 @@
     </style>
     
 </head>
-<body>
+<body data-spy="scroll">
   <!--WEBSITE-LOGO-LOADER-->
     <header class="loader_bg">
       <section class="loader">
         <div class="d-flex justify-content-center">
-          <img src="assets/img/mainlogo.png" class="loader_img" width="244" height="77" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;">
+          <img src="assets/img/mainlogo.png" class="loader_img" width="240" height="75" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;">
         </div>
       </section>
     </header>
@@ -295,7 +315,7 @@
     <header id="navbar">
         <nav class="navbar fixed-top navbar-light justify-content-center">
             <a class="navbar-brand" href="#">
-              <img src="assets/img/mainlogo.png" class="loader_img" width="210" height="65" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;border-radius: 5px;">
+              <img src="assets/img/mathelogy.png" class="loader_img" width="200" height="60" alt="MATHELOGY" style="box-shadow: 0 1px 10px #00000044;border-radius: 5px;">
             </a>
           </nav>
       </header>
@@ -306,21 +326,19 @@
     <br>
 <!---->
 <section class="book-box-layout-1">
-  <div class="alert alert-warning my-4" role="alert">
+  <div class="alert my-4" role="alert">
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <center><img src="./assets/img/black-illustration3.png" class="book-box-img" alt="book"></center>
+          <center><img src="./assets/img/black-illustration3.webp" class="book-box-img mx-1" alt="book"></center>
         </div>
         <div class="col-sm-8">
-          <p class="book-box-summary-1 text-dark mt-3" align="justify">
-            <b>Download Class 9 Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
+          <p class="book-box-summary-1 text-dark font-weight-bold mt-3" align="justify">
+            <b>Download Class IX Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
           </p>
-          <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="horizontal-arrow" download><strong>
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-            </svg>
-            <u> Get it here ! </u></strong></a>
+          <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="alert-btn btn" download>
+            <span class="alert-btn-text font-weight-bold"> Get it here ! </span>
+          </a>
         </div>
       </div>
       </div>
@@ -339,11 +357,38 @@
         <div class="col-md-11">
             <div class="accordion" id="accordionExample">
               <!---->
+              <div class="card">
+                <div class="card-header" id="headingSixteen">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                      <span class="chapter-name">RECORD WORKS <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                      </svg></span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                  <div class="card-body">
+                    
+                    <!---->
+                    <b class="text-bolder bg-warning rounded p-2">Record Work - 1</b>  
+                      <span class="badge badge-dark my-1 px-2 py-2">
+                        <a href="./notes/RecordWork-1.pdf" download class="links">download</a>
+                      </span>
+                    <br>
+                    <br>
+                    <b class="text-bolder bg-warning rounded p-2">Record Work - 2</b>
+                      <span class="badge badge-dark my-1 px-2 py-2">
+                        <a href="./notes/RecordWork-2.pdf" download class="links">download</a>
+                      </span>
+                  </div>
+                </div>
+              </div>
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <span class='chapter-name'><a href="#" class="badge badge-dark">1.</a> Number Systems</span>
+                        <span class="chapter-name"><a href="#" class="badge badge-dark">1.</a> Number Systems</span>
                       </button>
                     </h2>
                   </div>
@@ -365,9 +410,9 @@
                         <iframe class="embed-responsive-item" src="./notes/NumberSystem-FullChapter-Notes.pdf" allowfullscreen></iframe>
                       </div>
                       <!---->
-                        <button class="btn-chapterdownload btn btn-dark px-2">
-                          <a href="./notes/NumberSystem-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                        </button>
+                        <span class="badge badge-dark my-1 px-2 py-2">
+                          <a href="./notes/NumberSystem-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                        </span>
                     </div>
                   </div>
                 </div>
@@ -396,9 +441,9 @@
                           <div class="embed-responsive embed-responsive-16by9 mb-2">
                             <iframe class="embed-responsive-item" src="./notes/Polynomials-FullChapter-Notes.pdf" allowfullscreen></iframe>
                           </div>
-                          <button class="btn-chapterdownload btn btn-dark px-2">
-                            <a href="./notes/Polynomials-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                          </button>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/Polynomials-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                           <!---->
                     </div>
                   </div>
@@ -425,9 +470,9 @@
                           <div class="embed-responsive embed-responsive-16by9 mb-2">
                             <iframe class="embed-responsive-item" src="./notes/CoordinateGeometry-FullChapter_Notes.pdf" allowfullscreen></iframe>
                           </div>
-                          <button class="btn-chapterdownload btn btn-dark px-2">
-                            <a href="./notes/CoordinateGeometry-FullChapter_Notes.pdf" download class="links">Download full notes</a>
-                          </button>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/CoordinateGeometry-FullChapter_Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                       <!---->
                   </div>
                 </div>
@@ -456,9 +501,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/LinearEquationsInTwoVariables-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/LinearEquationsInTwoVariables-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                            </button>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/LinearEquationsInTwoVariables-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                         <!---->
                       </div>
                     </div>
@@ -485,9 +530,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/Euclid'sGeometry-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/Euclid'sGeometry-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                            </button>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Euclid'sGeometry-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                           <!---->
                       </div>
                     </div>
@@ -518,9 +563,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/Lines&Angles-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/Lines&Angles-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                            </button>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Lines&Angles-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                             <!---->
                       </div>
                     </div>
@@ -550,34 +595,29 @@
                           <div class="embed-responsive embed-responsive-16by9 mb-2">
                             <iframe class="embed-responsive-item" src="./notes/Triangles-FullChapter-Notes.pdf" allowfullscreen></iframe>
                           </div>
-                          <button class="btn-chapterdownload btn btn-dark px-2">
-                            <a href="./notes/Triangles-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                          </button>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/Triangles-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                           <!---->
                       </div>
                     </div>
                   </div>
                   <!---->
                   <div class="book-box-layout-2">
-                  <div class="alert alert-warning my-4" role="alert">
+                  <div class="alert bg-warning my-4" role="alert">
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-5">
-                          <center><img src="./assets/img/black-illustration3.png" class="book-box-img" alt="book"></center>
+                          <center><img src="./assets/img/black-illustration3.webp" class="book-box-img" alt="book"></center>
                         </div>
                         <div class="col-sm-7">
                           <p class="book-box-summary-2 text-dark mt-3" align="justify">
-                            <b>Download Class 9 Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
+                            <b>Download Class IX Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
                           </p>
                         </div>
-                          <a href="./books/CBSE-NCERT-Class-9-MathsBook.pdf" class="horizontal-arrow" download>
-                            <strong>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                            </svg>
-                            <u> Get it here ! </u>
-                          </strong>
-                          </a>
+                        <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="alert-btn btn ml-3" download>
+                          <span class="alert-btn-text font-weight-bold"> Get it here ! </span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -603,7 +643,21 @@
                             <li><a class="links">The Mid-point Theorem</a></li>
                             <li><a class="links">Summary</a></li>
                             </ol>
-                            <p class="text-danger ml-3">*Notes not Published</p>
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/Quadrilaterals-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Quadrilaterals-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
+                            <br>
+                            <hr>
+                            <span class="badge badge-dark my-2">Mid-Point Theorem :-</span>
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/MidPointTheorem-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/MidPointTheorem-Notes.pdf" download class="links">Download Mid-Point Theorem Notes</a>
+                            </span>
                       </div>
                     </div>
                   </div>
@@ -628,9 +682,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/AreaOfParallelogramsAndTriangles-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/Statistics-FullChapter_Notes.pdf" download class="links">Download full notes</a>
-                            </button>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Statistics-FullChapter_Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                             <!---->
                       </div>
                     </div>
@@ -684,9 +738,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/Construction-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/Construction-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                            </button>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Construction-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                               <!---->
                       </div>
                     </div>
@@ -713,18 +767,9 @@
                             <div class="embed-responsive embed-responsive-16by9 mb-2">
                               <iframe class="embed-responsive-item" src="./notes/Heron'sFormula-FullChapter-Notes.pdf" allowfullscreen></iframe>
                             </div>
-                            <button class="btn-chapterdownload btn btn-dark px-2">
-                              <a href="./notes/Heron'sFormula-FullChapter-Notes.pdf" download class="links">Download full notes</a>
-                            </button>
-                              <!---->
-                              <br>
-                              <hr>
-                              <span class="badge badge-dark my-3"> 
-                              <b>Extra Questions :-</b>
-                              </span>
-                              <div class="embed-responsive embed-responsive-16by9 mb-2">
-                                <iframe class="embed-responsive-item" src="./notes/heron's-formula-extra-questions.png" allowfullscreen></iframe>
-                              </div>                              
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Heron'sFormula-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>                            
                       </div>
                     </div>
                   </div>
@@ -751,7 +796,12 @@
                             <li><a class="links">Volume of a Sphere</a></li>
                             <li><a class="links">Summary</a></li>
                           </ol>
-                            <p class="text-danger ml-3">*Notes not Published</p>
+                          <div class="embed-responsive embed-responsive-16by9 mb-2">
+                            <iframe class="embed-responsive-item" src="./notes/SurfaceArea&Volume-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                          </div>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/SurfaceArea&Volume-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                       </div>
                     </div>
                   </div>
@@ -779,9 +829,9 @@
                           <div class="embed-responsive embed-responsive-16by9 mb-2">
                             <iframe class="embed-responsive-item" src="./notes/Statistics-FullChapter_Notes.pdf" allowfullscreen></iframe>
                           </div>
-                          <button class="btn-chapterdownload btn btn-dark px-2">
-                            <a href="./notes/Statistics-FullChapter_Notes.pdf" download class="links">Download full notes</a>
-                          </button>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/Statistics-FullChapter_Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                           <!---->
                       </div>
                     </div>
@@ -829,8 +879,8 @@
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
 
               <!--ABOUT Button trigger modal -->
-<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-  <li class="nav-item"><span class="nav-link px-2 text-muted">About &nbsp;•&nbsp;</span></li>
+<button type="button" class="btn rounded-0" data-toggle="modal" data-target="#exampleModal" id="btn-left">
+  <li class="nav-item"><span class="nav-link px-2 text-muted">About</span></li>
 </button>
 
 <!-- Modal -->
@@ -855,7 +905,7 @@
               
               <!--CONTACT Button trigger modal -->
 <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop">
-  <li class="nav-item"><span class="text-muted">Contact &nbsp;•&nbsp;</span></li>
+  <li class="nav-item"><span class="text-muted">Contact</span></li>
 </button>
 
 <!-- POPUP-(CONTACT) -->
@@ -895,7 +945,6 @@
   </div>
 </div>
 <!---->
-            <li class="nav-item"><a href="#" class="nav-link px-2 mt-2 text-muted">Terms of Service</a></li>
             </ul>
             <p class="text-center text-muted">© 2021 MATHELOGY, Inc</p>
             <p class="text-center text-muted">
@@ -913,7 +962,7 @@
     <script>
       setTimeout(function(){
         $('.loader_bg').fadeToggle();
-      }, 1850)
+      }, 1000)
       </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <!---->
