@@ -195,13 +195,16 @@
         height: 0;
         margin-top:-11px;
       }
-      .alert-btn{
-        border: 2px solid #000000;
+      .getitherebtn{
+        background: transparent;
+        border: 2px solid black;
+        color: #000000;
       }
-      .alert-btn:focus{
-        outline: none;
-        box-shadow: none;
+      .getitherebtn:hover{
+        background: transparent;
+        color: black;
       }
+      
 
       .badge-dark {
     color: #fff;
@@ -332,9 +335,9 @@
           <p class="book-box-summary-1 text-dark font-weight-bold mt-3" align="justify">
             <b>Download Class IX Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the NCERT Maths Book for the current academic session <b>2021-2022.</b>
           </p>
-          <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="alert-btn btn" download>
-            <span class="alert-btn-text font-weight-bold"> Get it here ! </span>
-          </a>
+          <span class="btn btn-black getitherebtn my-1 px-2 py-2">
+            <a href="./notes/CBSE-NCERT-Class-9-MathsBook.pdf" download class="link font-weight-bold" style="color: #000000;">Get it here</a>
+          </span>
         </div>
       </div>
       </div>
@@ -632,9 +635,9 @@
                             <b>Download the Class IX Maths NCERT Book</b> as a <b>PDF</b>. We have provided here the <b>latest edition</b> of the <b>NCERT Maths Book</b> for the <b>current academic session</b> <b>2021-2022.</b>
                           </p>
                         </div>
-                        <a href=".books/CBSE-NCERT-Class-9-MathsBook.pdf" class="alert-btn btn ml-3" download>
-                          <span class="alert-btn-text"><b>Get it here!</b></span>
-                        </a>
+                        <span class="btn btn-black getitherebtn my-1 px-2 py-2">
+                          <a href="./notes/CBSE-NCERT-Class-9-MathsBook.pdf" download class="link font-weight-bold" style="color: #000000;">Get it here</a>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -717,7 +720,9 @@
                   <div class="card-header" id="headingTen">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                          <span class='chapter-name'><a href="#" class="badge badge-dark">10</a> Circles</span>
+                          <span class='chapter-name'><a href="#" class="badge badge-dark">10</a> Circles<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-up-right-circle ml-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                          </svg></span>
                       </button>
                     </h2>
                   </div>
@@ -735,7 +740,14 @@
                           <li><a class="links">Cyclic Quadrilaterals</a></li>
                           <li><a class="links">Summary</a></li>
                           </ol>
-                          <p class="text-danger ml-3">*Notes not Published</p>
+                          <span class="badge badge-dark mb-2">Notes :-</span>
+                            <!---->
+                            <div class="embed-responsive embed-responsive-16by9 mb-2">
+                              <iframe class="embed-responsive-item" src="./notes/Circles-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                            </div>
+                            <span class="badge badge-dark my-1 px-2 py-2">
+                              <a href="./notes/Circles-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                            </span>
                     </div>
                   </div>
                 </div>
@@ -875,7 +887,9 @@
                     <div class="card-header" id="headingFifteen">
                       <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed bg-white" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                            <span class='chapter-name'><a href="#" class="badge badge-dark">15</a> Probability</span>
+                            <span class='chapter-name'><a href="#" class="badge badge-dark">15</a> Probability<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-up-right-circle ml-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                            </svg></span>
                         </button>
                       </h2>
                     </div>
@@ -888,7 +902,12 @@
                             <li><a class="links">Equivalent Versions of Euclid's fifth Postulate</a></li>
                             <li><a class="links">Summary</a></li>
                           </ol>
-                          <p class="text-danger ml-3">*Notes not Published</p>
+                          <div class="embed-responsive embed-responsive-16by9 mb-2">
+                            <iframe class="embed-responsive-item" src="./notes/Probability-FullChapter-Notes.pdf" allowfullscreen></iframe>
+                          </div>
+                          <span class="badge badge-dark my-1 px-2 py-2">
+                            <a href="./notes/Probability-FullChapter-Notes.pdf" download class="links">Download Notes</a>
+                          </span>
                       </div>
                     </div>
                   </div>

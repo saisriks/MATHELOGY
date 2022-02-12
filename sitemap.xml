@@ -50,6 +50,29 @@
 <url>
   <loc>https://mathelogy.netlify.app/notes/Quadrilaterals-FullChapter-Notes.pdf</loc>
   <lastmod>2021-10-24T10:43:44+00:00</lastmod>
+<<<<<<< HEAD
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mathelogy.netlify.app/notes/Statistics-FullChapter_Notes.pdf</loc>
+  <lastmod>2021-10-24T10:43:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mathelogy.netlify.app/notes/Construction-FullChapter-Notes.pdf</loc>
+  <lastmod>2021-10-24T10:43:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mathelogy.netlify.app/notes/Heron'sFormula-FullChapter-Notes.pdf</loc>
+  <lastmod>2021-10-24T10:43:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mathelogy.netlify.app/notes/AreaOfParallelogramsAndTriangles-FullChapter-Notes.pdf</loc>
+  <lastmod>2021-10-24T10:43:44+00:00</lastmod>
+=======
+>>>>>>> 48d3247bc36c12f7e5b0f3a2ccc03f3ec46c6e9c
   <priority>0.80</priority>
 </url>
 <url>
